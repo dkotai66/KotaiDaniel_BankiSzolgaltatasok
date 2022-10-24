@@ -4,9 +4,9 @@ public class Kartya extends BankiSzolgaltatas {
     private Szamla szamla;
     private String kartyaSzam;
 
-    public Kartya(Tulajdonos tulajdonos) {
+    public Kartya(Tulajdonos tulajdonos, Szamla szamla, String kartyaszam) {
         super(tulajdonos);
-        this.szamla=szamla;
+        this.szamla= this.szamla;
         this.kartyaSzam=kartyaSzam;
     }
 
