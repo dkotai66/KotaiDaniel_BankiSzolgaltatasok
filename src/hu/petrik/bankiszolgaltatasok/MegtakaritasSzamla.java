@@ -5,7 +5,7 @@ public class MegtakaritasSzamla extends Szamla {
     private double kamat;
     public double alapKamat;
 
-    public MegtakaritasSzamla(Tulajdonos tulajdonos, double kamat, double alapKamat) {
+    public MegtakaritasSzamla(Tulajdonos tulajdonos) {
         super(tulajdonos);
         this.kamat = kamat;
         this.alapKamat = alapKamat;
