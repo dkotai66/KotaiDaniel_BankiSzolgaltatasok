@@ -6,6 +6,10 @@ import java.util.List;
 public class Bank {
     private List<Szamla> szamlakListaja;
 
+    public Bank() {
+        this.szamlakListaja = new ArrayList<>();
+    }
+
     public Szamla szamlaNyitas(Tulajdonos tulajdonos, int hitelKeret){
         if (hitelKeret<0){
             HitelSzamla hitelSZ=new HitelSzamla(tulajdonos, hitelKeret);
@@ -53,7 +57,5 @@ public class Bank {
     }
 
 
-    public Bank() {
-        this.szamlakListaja = new ArrayList<>();
-    }
+
 }

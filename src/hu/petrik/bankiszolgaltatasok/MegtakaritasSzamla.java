@@ -25,7 +25,7 @@ public class MegtakaritasSzamla extends Szamla {
 
     @Override
     public boolean kivesz(int osszeg) {
-        if(aktualisEgyenleg-osszeg<0){
+        if((aktualisEgyenleg-osszeg)<0){
             return false;
         }
         else{
