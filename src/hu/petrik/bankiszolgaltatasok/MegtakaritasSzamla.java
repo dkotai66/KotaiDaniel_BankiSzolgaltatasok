@@ -11,11 +11,26 @@ public class MegtakaritasSzamla extends Szamla {
         this.alapKamat = alapKamat;
     }
 
+    public double getKamat() {
+        return kamat;
+    }
 
+    public void setKamat(double kamat) {
+        this.kamat = kamat;
+    }
 
+    public void kamatJovairas(){
+        aktualisEgyenleg*=kamat;
+    }
 
     @Override
     public boolean kivesz(int osszeg) {
-        return false;
+        if(aktualisEgyenleg-osszeg<0){
+            return false;
+        }
+        else{
+            aktualisEgyenleg-=osszeg;
+            return true;
+        }
     }
 }
